@@ -1,0 +1,35 @@
+<form class="ui form" [formGroup]="addform" (ngSubmit)="onSubmit(addform)">
+    <h4 class="ui dividing header">Add Form</h4>
+    <div class="two fields">
+        <div class="field">
+            <app-input label="First Name" [control]="addform.get('firstName')"></app-input>
+        </div>
+        <div class="field">
+            <app-input label="Last Name" [control]="addform.get('lastName')"></app-input>
+        </div>
+    </div>
+    <div class="two fields">
+        <!-- <div style="margin-top: 22px" class="field">
+            <select class="ui dropdown">
+                <option value="">Office</option>
+                <option value="1">Home</option>
+                <option value="0">Personal</option>
+            </select>
+        </div> -->
+        <div class="field">
+            <app-input label="Contact No Type" [control]="addform.get('contact_no_type')"></app-input>
+        </div>
+        <div class="field">
+            <app-input label="Contact No" [control]="addform.get('contact_no')"></app-input>
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+            <app-input label="DOB" [control]="addform.get('dob')"></app-input>
+        </div>
+        <div class="field">
+            <app-input label="Email" [control]="addform.get('email')"></app-input>
+        </div>
+    </div>
+    <button class="ui button primary" *ngIf="!addform.invalid" type="submit">Submit</button>
+</form>

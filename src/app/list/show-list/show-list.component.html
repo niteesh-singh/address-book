@@ -1,0 +1,14 @@
+<div class="ui cards" *ngFor="let item of localData">
+    <div class="card">
+      <div class="content">
+        <div class="header">{{item.firstName}} {{item.lastName}}</div>
+        <div class="meta">{{item.contact_no}} <i class="text telephone icon"></i></div>
+        <div class="description">
+          {{item.dob}}
+        </div>
+        <div class="description">
+          {{item.email}} <i class="at icon"></i>
+        </div>
+      </div>
+    </div>
+</div>
