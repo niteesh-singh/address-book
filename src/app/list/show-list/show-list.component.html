@@ -1,4 +1,9 @@
-<div class="ui cards" *ngFor="let item of localData; let i = index">
+<h3 *ngIf="flag">If you are not seeing any data here, please add contact form.</h3>
+<div class="ui left icon input">
+  <input type="text" [(ngModel)]="searchText" placeholder="Search here...">
+  <i class="users icon"></i>
+</div>
+<div class="ui cards" *ngFor="let item of localData | filter:searchText; let i = index">
     <div class="card">
       <div class="content">
         <div class="header">{{item.firstName}} {{item.lastName}}</div>

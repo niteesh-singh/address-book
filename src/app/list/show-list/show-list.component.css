@@ -10,3 +10,7 @@
     top: 12px;
 }
 
+.ui.left.icon.input {
+    margin-bottom: 15px;
+    width: 95%;
+}

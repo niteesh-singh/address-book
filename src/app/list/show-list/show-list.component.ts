@@ -9,12 +9,17 @@ import { Router } from '@angular/router';
 })
 export class ShowListComponent implements OnInit {
   localData: any;
+  flag: boolean = false;
+  searchText: any;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.localData = JSON.parse(localStorage.getItem('myObj'));
-    console.log('data', this.localData)
+    console.log('data', this.localData);
+    if(this.localData == null) {
+      this.flag = true;
+    }
   }
 
   removeContact(e) {
