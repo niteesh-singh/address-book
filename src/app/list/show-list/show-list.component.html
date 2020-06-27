@@ -3,11 +3,11 @@
   <input type="text" [(ngModel)]="searchText" placeholder="Search here...">
   <i class="users icon"></i>
 </div>
-<div class="ui cards" *ngFor="let item of localData | filter:searchText; let i = index">
+<div class="ui cards showList" *ngFor="let item of localData | filter:searchText; let i = index">
     <div class="card">
       <div class="content">
         <div class="header">{{item.firstName}} {{item.lastName}}</div>
-        <div class="meta">{{item.contact_no}} <i class="call icon"></i></div>
+        <div class="meta">{{item.contact_no_type}} : {{item.contact_no}} <i class="call icon"></i></div>
         <div class="description">
           {{item.dob}}
         </div>

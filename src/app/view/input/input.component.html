@@ -4,7 +4,7 @@
         <input 
             class="input" 
             [formControl]="control" 
-            placeholder="First Name"
+            [placeholder]="placeholder"
             [ngClass]="{ 'is-danger': showErrors() }" > 
     </div>
     <ng-container *ngIf="showErrors()">

@@ -2,33 +2,33 @@
     <h4 class="ui dividing header">Add Contact</h4>
     <div class="two fields">
         <div class="field">
-            <app-input label="First Name" [control]="addform.get('firstName')"></app-input>
+            <app-input label="First Name" placeholder="First Name" [control]="addform.get('firstName')"></app-input>
         </div>
         <div class="field">
-            <app-input label="Last Name" [control]="addform.get('lastName')"></app-input>
+            <app-input label="Last Name" placeholder="Last Name" [control]="addform.get('lastName')"></app-input>
         </div>
     </div>
     <div class="two fields">
-        <!-- <div style="margin-top: 22px" class="field">
-            <select class="ui dropdown">
-                <option value="">Office</option>
-                <option value="1">Home</option>
-                <option value="0">Personal</option>
+        <div style="margin-top: 22px" class="field">
+            <select placeholder="Contact no type" formControlName="contact_no_type" class="ui dropdown">
+                <option value="Office">Office</option>
+                <option value="Home">Home</option>
+                <option value="Personal">Personal</option>
             </select>
+        </div>
+        <!-- <div class="field">
+            <app-input label="Contact No Type" [control]="addform.get('contact_no_type')"></app-input>
         </div> -->
         <div class="field">
-            <app-input label="Contact No Type" [control]="addform.get('contact_no_type')"></app-input>
-        </div>
-        <div class="field">
-            <app-input label="Contact No" [control]="addform.get('contact_no')"></app-input>
+            <app-input label="Contact No" placeholder="Contact no" [control]="addform.get('contact_no')"></app-input>
         </div>
     </div>
     <div class="two fields">
         <div class="field">
-            <app-input label="DOB" [control]="addform.get('dob')"></app-input>
+            <app-input label="DOB" placeholder="dd/mm/yyyy or dd-mm-yyyy" [control]="addform.get('dob')"></app-input>
         </div>
         <div class="field">
-            <app-input label="Email" [control]="addform.get('email')"></app-input>
+            <app-input label="Email" placeholder="Email" [control]="addform.get('email')"></app-input>
         </div>
     </div>
     <button class="ui button primary" *ngIf="!addform.invalid" type="submit">Submit</button>

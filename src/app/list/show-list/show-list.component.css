@@ -14,3 +14,13 @@
     margin-bottom: 15px;
     width: 95%;
 }
+
+.card {
+    background-color: #80808029 !important;
+}
+
+
+.ui.cards  {
+    float: left !important;
+    margin: 0px !important;
+}
