@@ -1,5 +1,5 @@
 <form class="ui form" [formGroup]="addform" (ngSubmit)="onSubmit(addform)">
-    <h4 class="ui dividing header">Add Form</h4>
+    <h4 class="ui dividing header">Add Contact</h4>
     <div class="two fields">
         <div class="field">
             <app-input label="First Name" [control]="addform.get('firstName')"></app-input>
@@ -32,4 +32,9 @@
         </div>
     </div>
     <button class="ui button primary" *ngIf="!addform.invalid" type="submit">Submit</button>
+    <div *ngIf="flag" style="display: block !important;" class="ui success message">
+        <div class="header">
+          Contact was added successfully
+        </div>
+    </div>
 </form>
