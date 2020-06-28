@@ -4,7 +4,7 @@ import { ShowListComponent } from './show-list/show-list.component';
 import { OperationsComponent } from '../view/operations/operations.component';
 
 const routes: Routes = [
-  { path: 'list', component: ShowListComponent },
+  { path: '', component: ShowListComponent },
   { path: 'edit/:id', component: OperationsComponent }
 ];
 

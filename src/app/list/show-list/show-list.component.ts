@@ -17,7 +17,7 @@ export class ShowListComponent implements OnInit {
   ngOnInit(): void {
     this.localData = JSON.parse(localStorage.getItem('myObj'));
     console.log('data', this.localData);
-    if(this.localData == null) {
+    if(this.localData.length == 0) {
       this.flag = true;
     }
   }
