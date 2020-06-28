@@ -1,5 +1,5 @@
 <h3 *ngIf="flag">If you are not seeing any data here, please add contact form.</h3>
-<div class="ui left icon input">
+<div style="width: 83%;" class="ui left icon input">
   <input type="text" [(ngModel)]="searchText" placeholder="Search here...">
   <i class="users icon"></i>
 </div>
@@ -9,7 +9,7 @@
         <div class="header">{{item.firstName}} {{item.lastName}}</div>
         <div class="meta">{{item.contact_no_type}} : {{item.contact_no}} <i class="call icon"></i></div>
         <div class="description">
-          {{item.dob}}
+          {{item.dob}} <i class="calendar alternate icon"></i>
         </div>
         <div class="description">
           {{item.email}} <i class="at icon"></i>
